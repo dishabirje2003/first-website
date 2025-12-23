@@ -15,8 +15,7 @@
 
 #       - name: Build Docker image
 #         run: docker build -t static-site .
-
-nname: CI Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -47,5 +46,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/first-website:latest
-            ghcr.io/${{ github.repository_owner }}/first-website:${{ github.sha }}
+            ghcr.io/dishabirje2003/first-website:latest
+            ghcr.io/dishabirje2003/first-website:${{ github.sha }}
